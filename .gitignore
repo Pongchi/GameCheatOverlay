@@ -90,3 +90,12 @@ typings/
 
 # Electron-Forge
 out/
+
+# visual studio
+.vs/
+x64/
+*.aps
+*.rc
+*.vcxproj*
+resource.h
+*.sln
