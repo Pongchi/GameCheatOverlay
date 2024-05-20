@@ -56,18 +56,18 @@ namespace core
 
             // 소켓 생성
             Socket listener = new Socket(ipAddress.AddressFamily,
-                SocketType.Stream, ProtocolType.Tcp);
+            SocketType.Stream, ProtocolType.Tcp);
+
+            // 서버 시작
+            listener.Bind(remoteEP);
+            listener.Listen(10);
+
+            Console.WriteLine("Waiting for a connection...");
 
             while (true)
             {
                 try
                 {
-                    // 서버 시작
-                    listener.Bind(remoteEP);
-                    listener.Listen(10);
-
-                    Console.WriteLine("Waiting for a connection...");
-
                     // 연결 요청 대기
                     Socket handler = listener.Accept();
 
