@@ -34,7 +34,7 @@ const createWindow = () => {
 
   initInteractive();
 
-  OverlayController.attachByTitle(window, 'Minecraft 1.20.6 - Singleplayer');
+  OverlayController.attachByTitle(window, 'AssaultCube');
 
   // mainWindow.webContents.openDevTools();
 };
@@ -68,10 +68,6 @@ function initInteractive () {
   globalShortcut.register(turnOffKey, () => {
     app.quit()
   })
-
-  // globalShortcut.register(turnOffKey, () => {
-  //   app.quit();
-  // })
 }
 
 

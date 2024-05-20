@@ -102,3 +102,10 @@ resource.h
 *.idb
 *.pdb
 *.tlog
+core/App.config
+*.csproj
+*.cache
+*.As
+core/obj
+core/Properties
+core/bin
