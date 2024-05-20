@@ -74,7 +74,7 @@ namespace core
                     Console.WriteLine($"Connected to {((IPEndPoint)handler.RemoteEndPoint).Address}");
 
                     // 클라이언트로부터 받은 데이터 읽기
-                    byte[] data = new byte[64];
+                    byte[] data = new byte[256];
                     int bytesRec = handler.Receive(data);
                     string requestData = Encoding.ASCII.GetString(data, 0, bytesRec);
                     Console.WriteLine($"Received data from client: {requestData}");
